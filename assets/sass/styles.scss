@@ -793,3 +793,33 @@ body.about-body {
         grid-template-columns: .8fr 1.2fr;
     }
 }
+
+/*----- EXTRA RESPONSIVE BREAKPOINTS (tambahan, tidak mengubah rule yang sudah ada) -----*/
+/* Small phones: cegah home__img (foto bulat) kebesaran/overlap di layar sempit */
+@media screen and (max-width: 400px) {
+    .home__img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* Tablet kecil / landscape phone: manfaatkan lebar layar sebelum breakpoint 768px */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .certificate__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume__skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Cegah scroll horizontal tak sengaja di semua ukuran layar */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
