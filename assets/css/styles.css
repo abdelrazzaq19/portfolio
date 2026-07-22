@@ -284,6 +284,7 @@ body.about-body {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  object-position: center 15%;
   border-radius: 50%;
 }
 
@@ -355,6 +356,38 @@ body.about-body {
 
 .about__contact a:hover {
   color: var(--first-color);
+}
+
+/*About - social icons (tambahan, tidak mengubah rule yang sudah ada)*/
+.about__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: .25rem;
+}
+
+.about__social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: var(--white-color);
+  transition: .3s;
+}
+
+.about__social-icon ion-icon {
+  pointer-events: none;
+}
+
+.about__social-icon:hover {
+  color: var(--first-color);
+  border-color: var(--first-color);
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 /*Sections: Experience, Projects, Education, Certificates*/
@@ -429,6 +462,19 @@ body.about-body {
   border-radius: .5rem;
   font-size: .85rem;
   font-weight: 400;
+}
+
+/*Certificate - tambahan agar item bisa berupa link ke LinkedIn tanpa mengubah rule di atas*/
+a.certificate__item {
+  display: block;
+  text-decoration: none;
+  color: var(--white-color);
+  transition: .3s;
+}
+
+a.certificate__item:hover {
+  color: var(--first-color);
+  border-color: var(--first-color);
 }
 
 /*Projects gallery*/
