@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Proyek - M. Ziad Abdel Razzaq</title>
+    <title>Projects — M. Ziad Abdel Razzaq</title>
 </head>
 
-<body class="about-body">
+<body>
     <!-- HEADER -->
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="index.html" class="nav__logo">AbdelCode</a>
+                <a href="index.html" class="nav__logo"><span class="nav__logo-mark">AR</span>AbdelCode</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -26,69 +26,137 @@
                 </ul>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
                 <ion-icon name="menu"></ion-icon>
-            </div>
+            </button>
         </nav>
     </header>
 
     <!-- MAIN -->
     <main class="l-projects bd-grid">
-        <h1 class="projects__title">Projects</h1>
+        <div class="page-head">
+            <span class="eyebrow reveal">Selected Work</span>
+            <h1 class="page-title reveal">Projects <span class="serif text-gradient">&amp; experiments</span></h1>
+            <p class="page-lead reveal">
+                A collection of mobile and web apps I've built while studying at IDN Boarding School —
+                from AI-powered tools to everyday utilities.
+            </p>
+        </div>
 
         <div class="projects__grid">
-            <a href="#" class="project__card">
+            <article class="project__card card card--lift reveal">
                 <div class="project__img">
-                    <img src="assets/img/projects/schedule generator .jpg" alt="Schedule Generator App With AI">
+                    <img src="assets/img/projects/schedule generator .jpg" alt="Schedule Generator App With AI"
+                        loading="lazy">
                 </div>
-                <h3 class="project__title">Schedule Generator App With AI</h3>
-            </a>
+                <div class="project__body">
+                    <span class="project__category">Mobile · AI</span>
+                    <h3 class="project__title">Schedule Generator with AI</h3>
+                    <p class="project__description">Generates personalized daily schedules from user input
+                        using an AI model integrated through an API.</p>
+                    <div class="chips">
+                        <span class="chip">Flutter</span>
+                        <span class="chip">AI API</span>
+                    </div>
+                </div>
+            </article>
 
-            <a href="#" class="project__card">
+            <article class="project__card card card--lift reveal">
                 <div class="project__img">
-                    <img src="assets/img/projects/scanner app.jpg" alt="QR-Scanner App">
+                    <img src="assets/img/projects/scanner app.jpg" alt="QR Scanner App" loading="lazy">
                 </div>
-                <h3 class="project__title">QR-Scanner App</h3>
-            </a>
+                <div class="project__body">
+                    <span class="project__category">Mobile</span>
+                    <h3 class="project__title">QR Scanner App</h3>
+                    <p class="project__description">Scans and generates QR codes quickly using the device camera,
+                        with a simple and clean interface.</p>
+                    <div class="chips">
+                        <span class="chip">Flutter</span>
+                        <span class="chip">Camera</span>
+                    </div>
+                </div>
+            </article>
 
-            <a href="#" class="project__card">
+            <article class="project__card card card--lift reveal">
                 <div class="project__img">
-                    <img src="assets/img/projects/quran app (1).jpg" alt="Al-Quran App">
+                    <img src="assets/img/projects/quran app (1).jpg" alt="Al-Quran App" loading="lazy">
                 </div>
-                <h3 class="project__title">Al-Quran App</h3>
-            </a>
+                <div class="project__body">
+                    <span class="project__category">Mobile</span>
+                    <h3 class="project__title">Al-Quran App</h3>
+                    <p class="project__description">Read the Quran by surah with Arabic text and translation,
+                        powered by a public Quran REST API.</p>
+                    <div class="chips">
+                        <span class="chip">Flutter</span>
+                        <span class="chip">REST API</span>
+                    </div>
+                </div>
+            </article>
 
-            <a href="#" class="project__card">
+            <article class="project__card card card--lift reveal">
                 <div class="project__img">
-                    <img src="assets/img/projects/Ecommerce app.jpg" alt="Ecommerce App">
+                    <img src="assets/img/projects/Ecommerce app.jpg" alt="E-commerce App" loading="lazy">
                 </div>
-                <h3 class="project__title">Ecommerce App</h3>
-            </a>
+                <div class="project__body">
+                    <span class="project__category">Mobile · Commerce</span>
+                    <h3 class="project__title">E-commerce App</h3>
+                    <p class="project__description">Online store experience with product listing, product details
+                        and shopping cart flow.</p>
+                    <div class="chips">
+                        <span class="chip">Flutter</span>
+                        <span class="chip">Firebase</span>
+                    </div>
+                </div>
+            </article>
 
-            <a href="#" class="project__card">
+            <article class="project__card card card--lift reveal">
                 <div class="project__img">
-                    <img src="assets/img/projects/Attendance app.jpg" alt="Attendance App">
+                    <img src="assets/img/projects/Attendance app.jpg" alt="Attendance App" loading="lazy">
                 </div>
-                <h3 class="project__title">Attendance App</h3>
-            </a>
+                <div class="project__body">
+                    <span class="project__category">Mobile · Productivity</span>
+                    <h3 class="project__title">Attendance App</h3>
+                    <p class="project__description">Digital attendance tracking with check-in records and history
+                        to replace manual attendance sheets.</p>
+                    <div class="chips">
+                        <span class="chip">Flutter</span>
+                        <span class="chip">Database</span>
+                    </div>
+                </div>
+            </article>
 
-            <a href="#" class="project__card">
+            <article class="project__card card card--lift reveal">
                 <div class="project__img">
-                    <img src="assets/img/projects/News app.jpg" alt="News App">
+                    <img src="assets/img/projects/News app.jpg" alt="News App" loading="lazy">
                 </div>
-                <h3 class="project__title">News App</h3>
-            </a>
+                <div class="project__body">
+                    <span class="project__category">Mobile</span>
+                    <h3 class="project__title">News App</h3>
+                    <p class="project__description">Browse the latest headlines by category, fetched in real time
+                        from a news REST API.</p>
+                    <div class="chips">
+                        <span class="chip">Flutter</span>
+                        <span class="chip">REST API</span>
+                    </div>
+                </div>
+            </article>
         </div>
     </main>
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner bd-grid">
+            <span>© <span data-year>2026</span> M. Ziad Abdel Razzaq. Built with care.</span>
+            <a href="https://github.com/abdelrazzaq19" target="_blank" rel="noopener">More on GitHub →</a>
+        </div>
+    </footer>
 
-    <!-- MAIN JS (nav toggle) -->
+    <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
 
     <!-- ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

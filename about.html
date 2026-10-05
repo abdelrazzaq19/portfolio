@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>About Me - M. Ziad Abdel Razzaq</title>
+    <title>About — M. Ziad Abdel Razzaq</title>
 </head>
 
-<body class="about-body">
+<body>
     <!-- HEADER -->
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="index.html" class="nav__logo">AbdelCode</a>
+                <a href="index.html" class="nav__logo"><span class="nav__logo-mark">AR</span>AbdelCode</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -26,68 +26,145 @@
                 </ul>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
                 <ion-icon name="menu"></ion-icon>
-            </div>
+            </button>
         </nav>
     </header>
 
     <!-- MAIN -->
     <main class="l-about bd-grid">
 
-        <!-- PROFIL -->
         <div class="about">
-            <div class="about__img">
-                <img src="assets/img/photo.jpg" alt="Foto M. Ziad Abdel Razzaq">
+            <div class="about__img reveal">
+                <img src="assets/img/photo.jpg" alt="Portrait of M. Ziad Abdel Razzaq">
             </div>
 
             <div class="about__data">
-                <span class="about__subtitle">About Me</span>
-                <h1 class="about__title">M. Ziad Abdel Razzaq</h1>
-                <p class="about__description">
-                    A software developer specializing in Flutter, Laravel, and React.js,
-                    with hands-on experience building both mobile and web applications.
-                    Proficient in REST API integration, AI-based applications, and
-                    database management, as well as mentoring vocational high school students
-                    through the IDN Teaching program. Passionate about creating scalable,
-                    user-friendly applications and continuously learning the latest
-                    software technologies.
+                <span class="eyebrow reveal">About Me</span>
+                <h1 class="page-title reveal">
+                    Student developer, <span class="serif text-gradient">building real products.</span>
+                </h1>
+
+                <p class="about__description reveal">
+                    I'm <strong>M. Ziad Abdel Razzaq</strong>, a Software Development student at
+                    <strong>SMK IDN Boarding School</strong> in Bogor, expected to graduate in 2027.
+                    I enjoy turning ideas into clean, useful web and mobile applications.
+                </p>
+                <p class="about__description reveal">
+                    I'm currently doing my internship (PKL) as a <strong>Web &amp; Mobile Developer at
+                        PT. Media Pintarin Bersama</strong>, where I work with <strong>React Native</strong>
+                    for mobile apps and <strong>Golang</strong> for backend services. Before that, I built
+                    projects with Flutter, Laravel and React.js, and taught web development to vocational
+                    students through the IDN Teaching program.
                 </p>
 
-                <p class="about__contact">
-                    West Jakarta.
-                    <a href="mailto:ziadabdelrazzaq@gmail.com">ziadabdelrazzaq@gmail.com</a> ·
-                    +62 851-1767-7881
-                </p>
-
-                <div class="about__social">
-                    <a href="https://www.linkedin.com/in/abdel-razzaq-7a7188324/" target="_blank" rel="noopener"
-                        class="about__social-icon" aria-label="LinkedIn">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                    <a href="https://github.com/abdelrazzaq19" target="_blank" rel="noopener" class="about__social-icon"
-                        aria-label="GitHub">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                    <a href="https://wa.me/6285117677881" target="_blank" rel="noopener" class="about__social-icon"
-                        aria-label="WhatsApp">
-                        <ion-icon name="logo-whatsapp"></ion-icon>
-                    </a>
-                    <a href="mailto:ziadabdelrazzaq@gmail.com" class="about__social-icon" aria-label="Email">
-                        <ion-icon name="mail"></ion-icon>
-                    </a>
+                <div class="info-grid">
+                    <div class="info-item card reveal">
+                        <span class="icon-box"><ion-icon name="school"></ion-icon></span>
+                        <div>
+                            <span class="info-item__label">School</span>
+                            <span class="info-item__value">SMK IDN Boarding School</span>
+                        </div>
+                    </div>
+                    <div class="info-item card reveal">
+                        <span class="icon-box"><ion-icon name="code-working"></ion-icon></span>
+                        <div>
+                            <span class="info-item__label">Major</span>
+                            <span class="info-item__value">Software Development</span>
+                        </div>
+                    </div>
+                    <div class="info-item card reveal">
+                        <span class="icon-box"><ion-icon name="briefcase"></ion-icon></span>
+                        <div>
+                            <span class="info-item__label">Internship</span>
+                            <span class="info-item__value">PT. Media Pintarin Bersama</span>
+                        </div>
+                    </div>
+                    <div class="info-item card reveal">
+                        <span class="icon-box"><ion-icon name="pin"></ion-icon></span>
+                        <div>
+                            <span class="info-item__label">Location</span>
+                            <span class="info-item__value">West Jakarta, Indonesia</span>
+                        </div>
+                    </div>
                 </div>
 
-                <a href="assets/cv/My_cv.pdf" class="about__button" download>DOWNLOAD CV</a>
+                <div class="btn-group reveal">
+                    <a href="assets/cv/My_cv.pdf" class="btn btn--primary" download>
+                        <ion-icon name="download"></ion-icon> Download CV
+                    </a>
+                    <a href="contact.html" class="btn btn--ghost">Get in touch</a>
+                </div>
             </div>
         </div>
 
+        <!-- WHAT I DO -->
+        <section class="section">
+            <span class="eyebrow reveal">What I Do</span>
+            <h2 class="section-title reveal">Focus areas</h2>
+
+            <div class="services">
+                <div class="service card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="phone-portrait"></ion-icon></span>
+                    <h3>Mobile Development</h3>
+                    <p>Cross-platform apps with React Native and Flutter — clean UI, smooth navigation and
+                        reliable API integration.</p>
+                </div>
+                <div class="service card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="globe"></ion-icon></span>
+                    <h3>Web Development</h3>
+                    <p>Responsive websites and web apps with React.js, Laravel and Tailwind CSS, from layout
+                        to deployment.</p>
+                </div>
+                <div class="service card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="git-network"></ion-icon></span>
+                    <h3>Backend &amp; APIs</h3>
+                    <p>REST APIs with Golang and Laravel, database design with MySQL and Firebase, and
+                        AI-powered features.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECH STACK -->
+        <section class="section">
+            <span class="eyebrow reveal">Toolkit</span>
+            <h2 class="section-title reveal">Tech I work with</h2>
+            <div class="chips reveal">
+                <span class="chip chip--accent">React Native</span>
+                <span class="chip chip--accent">Golang</span>
+                <span class="chip">React.js</span>
+                <span class="chip">Flutter</span>
+                <span class="chip">Laravel</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">PHP</span>
+                <span class="chip">Dart</span>
+                <span class="chip">Tailwind CSS</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">Firebase</span>
+                <span class="chip">Git &amp; GitHub</span>
+                <span class="chip">Postman</span>
+            </div>
+        </section>
+
     </main>
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner bd-grid">
+            <span>© <span data-year>2026</span> M. Ziad Abdel Razzaq. Built with care.</span>
+            <div class="social">
+                <a href="https://github.com/abdelrazzaq19" target="_blank" rel="noopener" class="social__link"
+                    aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/abdel-razzaq-7a7188324/" target="_blank" rel="noopener"
+                    class="social__link" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://wa.me/6285117677881" target="_blank" rel="noopener" class="social__link"
+                    aria-label="WhatsApp"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
 
-    <!-- MAIN JS (nav toggle) -->
+    <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
 
     <!-- ICONS -->

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Resume - M. Ziad Abdel Razzaq</title>
+    <title>Resume — M. Ziad Abdel Razzaq</title>
 </head>
 
-<body class="about-body">
+<body>
     <!-- HEADER -->
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="index.html" class="nav__logo">AbdelCode</a>
+                <a href="index.html" class="nav__logo"><span class="nav__logo-mark">AR</span>AbdelCode</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -26,9 +26,9 @@
                 </ul>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
                 <ion-icon name="menu"></ion-icon>
-            </div>
+            </button>
         </nav>
     </header>
 
@@ -36,216 +36,299 @@
     <main class="l-resume bd-grid">
 
         <!-- RESUME HEADER -->
-        <div class="resume__header">
-            <h1 class="resume__name">M. Ziad Abdel Razzaq</h1>
-            <span class="resume__role">Software Developer</span>
-            <p class="resume__contact">
-                West Jakarta ·
-                <a href="mailto:ziadabdelrazzaq@gmail.com">ziadabdelrazzaq@gmail.com</a> ·
-                +62 851-1767-7881
-            </p>
-
-            <div class="about__social">
-                <a href="https://www.linkedin.com/in/abdel-razzaq-7a7188324/" target="_blank" rel="noopener"
-                    class="about__social-icon" aria-label="LinkedIn">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-                <a href="https://github.com/abdelrazzaq19" target="_blank" rel="noopener" class="about__social-icon"
-                    aria-label="GitHub">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <a href="https://wa.me/6285117677881" target="_blank" rel="noopener" class="about__social-icon"
-                    aria-label="WhatsApp">
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                </a>
-                <a href="mailto:ziadabdelrazzaq@gmail.com" class="about__social-icon" aria-label="Email">
-                    <ion-icon name="mail"></ion-icon>
-                </a>
+        <div class="resume__header reveal">
+            <div>
+                <span class="eyebrow">Resume</span>
+                <h1 class="resume__name">M. Ziad Abdel Razzaq</h1>
+                <span class="resume__role">Software Development Student · Web &amp; Mobile Developer Intern</span>
+                <p class="resume__contact">
+                    <span><ion-icon name="pin"></ion-icon> West Jakarta, Indonesia</span>
+                    <span><ion-icon name="mail"></ion-icon> <a
+                            href="mailto:ziadabdelrazzaq@gmail.com">ziadabdelrazzaq@gmail.com</a></span>
+                    <span><ion-icon name="call"></ion-icon> +62 851-1767-7881</span>
+                </p>
             </div>
 
-            <a href="assets/cv/My_cv.pdf" class="resume__download" download>DOWNLOAD CV</a>
+            <div class="resume__actions">
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/abdel-razzaq-7a7188324/" target="_blank" rel="noopener"
+                        class="social__link" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/abdelrazzaq19" target="_blank" rel="noopener" class="social__link"
+                        aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://wa.me/6285117677881" target="_blank" rel="noopener" class="social__link"
+                        aria-label="WhatsApp"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="mailto:ziadabdelrazzaq@gmail.com" class="social__link" aria-label="Email"><ion-icon
+                            name="mail"></ion-icon></a>
+                </div>
+                <a href="assets/cv/My_cv.pdf" class="btn btn--primary" download>
+                    <ion-icon name="download"></ion-icon> Download CV
+                </a>
+            </div>
         </div>
 
-        <!-- PROFESSIONAL SUMMARY -->
+        <!-- PROFILE SUMMARY -->
         <section class="section">
-            <h2 class="section-title">Profile Summary</h2>
-            <p class="about__description">
-                Software Developer specializing in Flutter, Laravel, React.js, Html, Css, and Java Script with hands-on
-                experience developing mobile and web applications. Experienced in REST API
-                integration, AI-powered applications, database management, and mentoring
-                vocational high school students through the IDN Teaching Program. Passionate
-                about building scalable, user-friendly applications and continuously learning
-                modern software technologies.
+            <h2 class="section-title reveal">Profile Summary</h2>
+            <p class="about__description reveal">
+                Software Development student at <strong>SMK IDN Boarding School</strong>, currently completing an
+                internship (PKL) as a <strong>Web &amp; Mobile Developer at PT. Media Pintarin Bersama</strong> with a
+                focus on React Native and Golang. Hands-on experience building mobile and web applications with
+                Flutter, Laravel and React.js, integrating REST APIs, building AI-powered features and managing
+                databases. Experienced in mentoring vocational high school students through the IDN Teaching
+                program, and passionate about building scalable, user-friendly products.
             </p>
         </section>
 
-        <!-- EDUCATION -->
-        <section class="section">
-            <h2 class="section-title">Education</h2>
+        <div class="resume__layout">
+            <div>
+                <!-- EXPERIENCE -->
+                <section class="section">
+                    <h2 class="section-title reveal">Experience</h2>
 
-            <div class="timeline__item">
-                <h3 class="timeline__role">SDIT Iskandar Muda (SD PIM)</h3>
-                <span class="timeline__meta">Krueng Geukueh, Kec. Dewantara, Kab. Aceh Utara, Aceh · 2015 - 2021</span>
-                <p class="timeline__description">
-                    Completed elementary education with a focus on academic and character
-                    development. Memorized 1 juz of the Quran and won 2nd place in a futsal
-                    competition during the school's class meet event.
-                </p>
-            </div>
-            <div class="timeline__item">
-                <h3 class="timeline__role">SMP Al-Muslimun</h3>
-                <span class="timeline__meta">Krueng Geukueh, Kec. Dewantara, Kab. Aceh Utara, Aceh · 2021 - 2024</span>
-                <p class="timeline__description">
-                    Completed junior high school education. Memorized 15 juz of the Quran,
-                    won 1st place in badminton and 1st place in Tapak Suci during the
-                    school's class meet events, and won 3rd place in football at the same
-                    event.
-                </p>
-            </div>
-            <div class="timeline__item">
-                <h3 class="timeline__role">SMK IDN Boarding School</h3>
-                <span class="timeline__meta">Jl. Raya Jonggol-Dayeuh, Sukanegara, Kec. Jonggol, Kabupaten Bogor, Jawa
-                    Barat 16830</span>
-                <p class="timeline__description">
-                    Currently i pursuing as a student vocational high school at IDN Boarding School majoring in
-                    Software Developer. about to graduate in 2027. I have been actively involved in various
-                    extracurricular activities, including participating in coding competitions and contributing to
-                    open-source projects. My education has provided me with a strong foundation in software development
-                    principles, programming languages, and project management skills.
-                </p>
-            </div>
-        </section>
+                    <div class="timeline">
+                        <div class="timeline__item timeline__item--current card reveal">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">Web &amp; Mobile Developer Intern (PKL)</h3>
+                                <span class="timeline__date">2026 — Present</span>
+                            </div>
+                            <span class="timeline__meta">PT. Media Pintarin Bersama</span>
+                            <ul class="timeline__list">
+                                <li>Develop cross-platform mobile app features using React Native.</li>
+                                <li>Build and maintain backend services and REST APIs with Golang.</li>
+                                <li>Contribute to web development tasks and integrate front-end with APIs.</li>
+                                <li>Collaborate with the team using Git-based workflows and code reviews.</li>
+                            </ul>
+                            <div class="chips">
+                                <span class="chip chip--accent">React Native</span>
+                                <span class="chip chip--accent">Golang</span>
+                                <span class="chip">REST API</span>
+                                <span class="chip">Git</span>
+                            </div>
+                        </div>
 
-        <!-- EXPERIENCE -->
-        <section class="section">
-            <h2 class="section-title">Experience</h2>
+                        <div class="timeline__item card reveal">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">IDN Teaching Instructor</h3>
+                                <span class="timeline__date">May 2026</span>
+                            </div>
+                            <span class="timeline__meta">SMK Al-Irsyad Al-Islamiyah, Cirebon</span>
+                            <p class="timeline__description">
+                                Taught Laravel web development to vocational students, guiding them through
+                                building a Mini Stock Manager app — covering database design, CRUD operations,
+                                authentication, MVC architecture and responsive UI. Mentored students on
+                                debugging, best practices and collaborative project workflows.
+                            </p>
+                        </div>
 
-            <div class="timeline__item">
-                <h3 class="timeline__role">IDN Teaching Instructor</h3>
-                <span class="timeline__meta">SMK Al-Irsyad Al-Islamiyah, Cirebon · May 2026</span>
-                <p class="timeline__description">
-                    Currently serving as an IDN Teaching instructor teaching Laravel web
-                    development to vocational high school students. Guiding students through the
-                    development of a Mini Stock Manager web application, covering database
-                    design, CRUD operations, authentication, MVC architecture, and responsive
-                    user interface development. Mentoring students in applying software
-                    development best practices, debugging techniques, and collaborative project
-                    workflows to build real-world web applications.
-                </p>
-            </div>
+                        <div class="timeline__item card reveal">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">IDN Teaching Instructor</h3>
+                                <span class="timeline__date">May 2024</span>
+                            </div>
+                            <span class="timeline__meta">SMAN 1 Cikarang Selatan</span>
+                            <p class="timeline__description">
+                                Introduced students to web development with HTML and CSS, mentoring them to build a
+                                Company Profile website from start to finish in VS Code, with a focus on UI layout,
+                                styling and clean code structure.
+                            </p>
+                        </div>
 
-            <div class="timeline__item">
-                <h3 class="timeline__role">IDN Teaching Instructor</h3>
-                <span class="timeline__meta">SMAN 1 Cikarang Selatan · May 2024</span>
-                <p class="timeline__description">
-                    Introduced students to web development concepts using HTML and CSS. Mentored
-                    students in developing a Company Profile website project from start to
-                    finish through hands-on coding sessions using Visual Studio Code (VS Code).
-                    Helped students understand UI layout, styling, and clean code structure.
-                </p>
-            </div>
-
-            <div class="timeline__item">
-                <h3 class="timeline__role">IDN Teaching Instructor</h3>
-                <span class="timeline__meta">SMA Al-Muttaqin, Tasik Malaya · April 2024</span>
-                <p class="timeline__description">
-                    Taught students front-end web development fundamentals using HTML and CSS.
-                    Guided students in building a Company Profile website as the final project
-                    while using Visual Studio Code (VS Code) as the main development tool.
-                    Explained webpage structure, styling, layouting, and responsive design
-                    basics, while also assisting students in debugging code and improving website
-                    appearance.
-                </p>
-            </div>
-        </section>
-
-
-
-        <!-- SKILLS -->
-        <section class="section">
-            <h2 class="section-title">Skills</h2>
-            <div class="resume__skills-grid">
-                <div class="resume__skills-group">
-                    <h4>Programming</h4>
-                    <div class="about__skills">
-                        <span class="about__skill">Php</span>
-                        <span class="about__skill">Java Script</span>
-                        <span class="about__skill">Dart</span>
-                        <span class="about__skill">Html</span>
-                        <span class="about__skill">Css</span>
+                        <div class="timeline__item card reveal">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">IDN Teaching Instructor</h3>
+                                <span class="timeline__date">April 2024</span>
+                            </div>
+                            <span class="timeline__meta">SMA Al-Muttaqin, Tasikmalaya</span>
+                            <p class="timeline__description">
+                                Taught front-end fundamentals with HTML and CSS, guiding students to build a Company
+                                Profile website as their final project. Covered page structure, layout and
+                                responsive design basics, and helped students debug and polish their sites.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="resume__skills-group">
-                    <h4>Frameworks</h4>
-                    <div class="about__skills">
-                        <span class="about__skill">Flutter</span>
-                        <span class="about__skill">Laravel</span>
-                        <span class="about__skill">React.Js</span>
-                        <span class="about__skill">Tailwind Css</span>
+                </section>
+
+                <!-- EDUCATION -->
+                <section class="section">
+                    <h2 class="section-title reveal">Education</h2>
+
+                    <div class="timeline">
+                        <div class="timeline__item timeline__item--current card reveal">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">SMK IDN Boarding School</h3>
+                                <span class="timeline__date">2024 — 2027</span>
+                            </div>
+                            <span class="timeline__meta">Software Development · Jonggol, Bogor, West Java</span>
+                            <p class="timeline__description">
+                                Currently studying Software Development, expected to graduate in 2027. Active in
+                                coding competitions, the IDN Teaching program and personal projects, building a
+                                strong foundation in programming, software engineering principles and project
+                                management.
+                            </p>
+                        </div>
+
+                        <div class="timeline__item card reveal">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">SMP Al-Muslimun</h3>
+                                <span class="timeline__date">2021 — 2024</span>
+                            </div>
+                            <span class="timeline__meta">Dewantara, North Aceh, Aceh</span>
+                            <p class="timeline__description">
+                                Memorized 15 juz of the Quran. Won 1st place in badminton and Tapak Suci, and 3rd
+                                place in football at the school's class meet events.
+                            </p>
+                        </div>
+
+                        <div class="timeline__item card reveal">
+                            <div class="timeline__top">
+                                <h3 class="timeline__role">SDIT Iskandar Muda (SD PIM)</h3>
+                                <span class="timeline__date">2015 — 2021</span>
+                            </div>
+                            <span class="timeline__meta">Dewantara, North Aceh, Aceh</span>
+                            <p class="timeline__description">
+                                Focused on academic and character development. Memorized 1 juz of the Quran and won
+                                2nd place in futsal at the school's class meet.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="resume__skills-group">
-                    <h4>Database</h4>
-                    <div class="about__skills">
-                        <span class="about__skill">MySql</span>
-                        <span class="about__skill">SQLite</span>
-                        <span class="about__skill">Firebase</span>
-                    </div>
-                </div>
-                <div class="resume__skills-group">
-                    <h4>Tools</h4>
-                    <div class="about__skills">
-                        <span class="about__skill">Git</span>
-                        <span class="about__skill">Github</span>
-                        <span class="about__skill">Vs Code</span>
-                        <span class="about__skill">Postman</span>
-                    </div>
-                </div>
+                </section>
             </div>
-        </section>
 
-
+            <!-- SKILLS -->
+            <aside>
+                <section class="section">
+                    <h2 class="section-title reveal">Skills</h2>
+                    <div class="skills-stack">
+                        <div class="skills-group card reveal">
+                            <h4>Languages</h4>
+                            <div class="chips">
+                                <span class="chip chip--accent">Go</span>
+                                <span class="chip">JavaScript</span>
+                                <span class="chip">PHP</span>
+                                <span class="chip">Dart</span>
+                                <span class="chip">HTML</span>
+                                <span class="chip">CSS</span>
+                            </div>
+                        </div>
+                        <div class="skills-group card reveal">
+                            <h4>Frameworks</h4>
+                            <div class="chips">
+                                <span class="chip chip--accent">React Native</span>
+                                <span class="chip">React.js</span>
+                                <span class="chip">Flutter</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Tailwind CSS</span>
+                            </div>
+                        </div>
+                        <div class="skills-group card reveal">
+                            <h4>Database</h4>
+                            <div class="chips">
+                                <span class="chip">MySQL</span>
+                                <span class="chip">SQLite</span>
+                                <span class="chip">Firebase</span>
+                            </div>
+                        </div>
+                        <div class="skills-group card reveal">
+                            <h4>Tools</h4>
+                            <div class="chips">
+                                <span class="chip">Git</span>
+                                <span class="chip">GitHub</span>
+                                <span class="chip">VS Code</span>
+                                <span class="chip">Postman</span>
+                            </div>
+                        </div>
+                        <div class="skills-group card reveal">
+                            <h4>Soft Skills</h4>
+                            <div class="chips">
+                                <span class="chip">Teaching &amp; Mentoring</span>
+                                <span class="chip">Teamwork</span>
+                                <span class="chip">Problem Solving</span>
+                                <span class="chip">Communication</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
 
         <!-- CERTIFICATES -->
         <section class="section">
-            <h2 class="section-title">Certificates</h2>
+            <h2 class="section-title reveal">Certificates</h2>
             <div class="certificate__grid">
                 <a href="https://www.linkedin.com/posts/abdel-razzaq-7a7188324_certif-basic-ai-activity-7484977389005967363-AXB-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHlTm8BAqqRNzQaFvIhqnOdgigkMj_Kr-c"
-                    target="_blank" rel="noopener" class="certificate__item">Learn Basic AI</a>
+                    target="_blank" rel="noopener" class="certificate__item card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="ribbon"></ion-icon></span>
+                    Learn Basic AI
+                    <ion-icon name="open" class="certificate__arrow"></ion-icon>
+                </a>
                 <a href="https://www.linkedin.com/posts/abdel-razzaq-7a7188324_pemrograman-web-ugcPost-7485170356689981440-NwEl/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHlTm8BAqqRNzQaFvIhqnOdgigkMj_Kr-c"
-                    target="_blank" rel="noopener" class="certificate__item">Learn Basic Pemrograman Web</a>
+                    target="_blank" rel="noopener" class="certificate__item card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="ribbon"></ion-icon></span>
+                    Learn Basic Web Programming
+                    <ion-icon name="open" class="certificate__arrow"></ion-icon>
+                </a>
                 <a href="https://www.linkedin.com/posts/abdel-razzaq-7a7188324_belajar-dasar-cloud-dan-gen-ai-di-aws-activity-7396850582206136320-8LXD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHlTm8BAqqRNzQaFvIhqnOdgigkMj_Kr-c"
-                    target="_blank" rel="noopener" class="certificate__item">Learn The Basics Of Cloud And Gen AI on
-                    AWS</a>
+                    target="_blank" rel="noopener" class="certificate__item card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="ribbon"></ion-icon></span>
+                    Learn the Basics of Cloud and Gen AI on AWS
+                    <ion-icon name="open" class="certificate__arrow"></ion-icon>
+                </a>
                 <a href="https://www.linkedin.com/posts/abdel-razzaq-7a7188324_sertifikat-activity-7432257145041207296-ZjWb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHlTm8BAqqRNzQaFvIhqnOdgigkMj_Kr-c"
-                    target="_blank" rel="noopener" class="certificate__item">Learn Data Science Applications With
-                    Microsoft
-                    Fabric</a>
+                    target="_blank" rel="noopener" class="certificate__item card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="ribbon"></ion-icon></span>
+                    Data Science Applications with Microsoft Fabric
+                    <ion-icon name="open" class="certificate__arrow"></ion-icon>
+                </a>
                 <a href="https://www.linkedin.com/posts/abdel-razzaq-7a7188324_coding-for-data-activity-7438012499234492416-Hmds?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHlTm8BAqqRNzQaFvIhqnOdgigkMj_Kr-c"
-                    target="_blank" rel="noopener" class="certificate__item">Coding For Data</a>
+                    target="_blank" rel="noopener" class="certificate__item card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="ribbon"></ion-icon></span>
+                    Coding for Data
+                    <ion-icon name="open" class="certificate__arrow"></ion-icon>
+                </a>
                 <a href="https://www.linkedin.com/posts/abdel-razzaq-7a7188324_certif-activity-7435143785673801728-bxiB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHlTm8BAqqRNzQaFvIhqnOdgigkMj_Kr-c"
-                    target="_blank" rel="noopener" class="certificate__item">Vibe Coding</a>
+                    target="_blank" rel="noopener" class="certificate__item card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="ribbon"></ion-icon></span>
+                    Vibe Coding
+                    <ion-icon name="open" class="certificate__arrow"></ion-icon>
+                </a>
                 <a href="https://www.linkedin.com/posts/abdel-razzaq-7a7188324_certif-activity-7434061505345667073-SeVe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHlTm8BAqqRNzQaFvIhqnOdgigkMj_Kr-c"
-                    target="_blank" rel="noopener" class="certificate__item">Generative AI In Practice</a>
+                    target="_blank" rel="noopener" class="certificate__item card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="ribbon"></ion-icon></span>
+                    Generative AI in Practice
+                    <ion-icon name="open" class="certificate__arrow"></ion-icon>
+                </a>
                 <a href="https://www.linkedin.com/posts/abdel-razzaq-7a7188324_sertifikat-activity-7433017508774772736-p6p6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHlTm8BAqqRNzQaFvIhqnOdgigkMj_Kr-c"
-                    target="_blank" rel="noopener" class="certificate__item">Basics Of Sql Statements & Indexes</a>
+                    target="_blank" rel="noopener" class="certificate__item card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="ribbon"></ion-icon></span>
+                    Basics of SQL Statements &amp; Indexes
+                    <ion-icon name="open" class="certificate__arrow"></ion-icon>
+                </a>
                 <a href="https://www.linkedin.com/posts/abdel-razzaq-7a7188324_certif-activity-7433695636031463424-FoBu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHlTm8BAqqRNzQaFvIhqnOdgigkMj_Kr-c"
-                    target="_blank" rel="noopener" class="certificate__item">Sql (Intermediate)</a>
+                    target="_blank" rel="noopener" class="certificate__item card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="ribbon"></ion-icon></span>
+                    SQL (Intermediate)
+                    <ion-icon name="open" class="certificate__arrow"></ion-icon>
+                </a>
                 <a href="https://www.linkedin.com/posts/abdel-razzaq-7a7188324_sertifikat-activity-7432270733357121536-hl4y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFHlTm8BAqqRNzQaFvIhqnOdgigkMj_Kr-c"
-                    target="_blank" rel="noopener" class="certificate__item">Building Generative AI Applications With
-                    Microsoft
-                    Azure</a>
+                    target="_blank" rel="noopener" class="certificate__item card card--lift reveal">
+                    <span class="icon-box"><ion-icon name="ribbon"></ion-icon></span>
+                    Building Generative AI Applications with Microsoft Azure
+                    <ion-icon name="open" class="certificate__arrow"></ion-icon>
+                </a>
             </div>
         </section>
 
-
-
     </main>
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner bd-grid">
+            <span>© <span data-year>2026</span> M. Ziad Abdel Razzaq. Built with care.</span>
+            <span>IDN Boarding School · PT. Media Pintarin Bersama</span>
+        </div>
+    </footer>
 
-    <!-- MAIN JS (nav toggle) -->
+    <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
 
     <!-- ICONS -->

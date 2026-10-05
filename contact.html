@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Contact - M. Ziad Abdel Razzaq</title>
+    <title>Contact — M. Ziad Abdel Razzaq</title>
 </head>
 
-<body class="about-body">
+<body>
     <!-- HEADER -->
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="index.html" class="nav__logo">AbdelCode</a>
+                <a href="index.html" class="nav__logo"><span class="nav__logo-mark">AR</span>AbdelCode</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -26,29 +26,30 @@
                 </ul>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
                 <ion-icon name="menu"></ion-icon>
-            </div>
+            </button>
         </nav>
     </header>
 
     <!-- MAIN -->
     <main class="l-contact bd-grid">
 
-        <div class="contact__header">
-            <h1 class="contact__title">Contact Me</h1>
-            <p class="contact__subtitle">
-                Have a project, collaboration opportunity, or just want to discuss
-                app development? Feel free to reach out to me through any of the
-                channels below, or send a message directly through this form.
+        <div class="page-head">
+            <span class="eyebrow reveal">Contact</span>
+            <h1 class="page-title reveal">Let's build <span class="serif text-gradient">something together.</span>
+            </h1>
+            <p class="page-lead reveal">
+                Have a project, collaboration opportunity, or just want to talk about web and mobile
+                development? Reach out through any channel below, or send a message with the form.
             </p>
         </div>
 
         <div class="contact__grid">
             <!-- CONTACT INFO -->
             <div class="contact__info">
-                <div class="contact__info-item">
-                    <ion-icon name="mail" class="contact__info-icon"></ion-icon>
+                <div class="contact__info-item card reveal">
+                    <span class="icon-box"><ion-icon name="mail"></ion-icon></span>
                     <div>
                         <span class="contact__info-label">Email</span>
                         <a href="mailto:ziadabdelrazzaq@gmail.com"
@@ -56,8 +57,8 @@
                     </div>
                 </div>
 
-                <div class="contact__info-item">
-                    <ion-icon name="logo-whatsapp" class="contact__info-icon"></ion-icon>
+                <div class="contact__info-item card reveal">
+                    <span class="icon-box"><ion-icon name="logo-whatsapp"></ion-icon></span>
                     <div>
                         <span class="contact__info-label">WhatsApp</span>
                         <a href="https://wa.me/6285117677881" target="_blank" rel="noopener"
@@ -65,16 +66,8 @@
                     </div>
                 </div>
 
-                <div class="contact__info-item">
-                    <ion-icon name="location" class="contact__info-icon"></ion-icon>
-                    <div>
-                        <span class="contact__info-label">Lokasi</span>
-                        <span class="contact__info-value">West Java, West Jakarta</span>
-                    </div>
-                </div>
-
-                <div class="contact__info-item">
-                    <ion-icon name="logo-linkedin" class="contact__info-icon"></ion-icon>
+                <div class="contact__info-item card reveal">
+                    <span class="icon-box"><ion-icon name="logo-linkedin"></ion-icon></span>
                     <div>
                         <span class="contact__info-label">LinkedIn</span>
                         <a href="https://www.linkedin.com/in/abdel-razzaq-7a7188324/" target="_blank" rel="noopener"
@@ -82,31 +75,41 @@
                     </div>
                 </div>
 
-                <div class="contact__info-item">
-                    <ion-icon name="logo-github" class="contact__info-icon"></ion-icon>
+                <div class="contact__info-item card reveal">
+                    <span class="icon-box"><ion-icon name="logo-github"></ion-icon></span>
                     <div>
                         <span class="contact__info-label">GitHub</span>
                         <a href="https://github.com/abdelrazzaq19" target="_blank" rel="noopener"
                             class="contact__info-value">github.com/abdelrazzaq19</a>
                     </div>
                 </div>
+
+                <div class="contact__info-item card reveal">
+                    <span class="icon-box"><ion-icon name="pin"></ion-icon></span>
+                    <div>
+                        <span class="contact__info-label">Location</span>
+                        <span class="contact__info-value">West Jakarta, Indonesia</span>
+                    </div>
+                </div>
             </div>
 
             <!-- CONTACT FORM -->
-            <form class="contact__form" id="contact-form">
-                <div class="contact__form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your full name" required>
-                </div>
+            <form class="contact__form card reveal" id="contact-form">
+                <div class="contact__form-row">
+                    <div class="contact__form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
 
-                <div class="contact__form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+                    <div class="contact__form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
                 </div>
 
                 <div class="contact__form-group">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Topic of your message" required>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
                 </div>
 
                 <div class="contact__form-group">
@@ -114,21 +117,29 @@
                     <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
                 </div>
 
-                <button type="submit" class="contact__submit">SEND MESSAGE</button>
+                <button type="submit" class="btn btn--primary">
+                    Send Message <ion-icon name="send"></ion-icon>
+                </button>
                 <span class="contact__note">Clicking "Send Message" will open your email application.</span>
             </form>
         </div>
 
     </main>
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner bd-grid">
+            <span>© <span data-year>2026</span> M. Ziad Abdel Razzaq. Built with care.</span>
+            <span>IDN Boarding School · PT. Media Pintarin Bersama</span>
+        </div>
+    </footer>
 
-    <!-- MAIN JS (nav toggle) -->
+    <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
 
     <!-- ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 
     <!-- CONTACT FORM HANDLER (scoped to this page only) -->
     <script>
@@ -139,7 +150,7 @@
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
 
-            const body = `Nama: ${name}\nEmail: ${email}\n\n${message}`;
+            const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
             const mailtoLink = `mailto:ziadabdelrazzaq@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
             window.location.href = mailtoLink;

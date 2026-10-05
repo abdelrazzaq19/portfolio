@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="M. Ziad Abdel Razzaq — Software Development student at IDN Boarding School, currently interning as a Web & Mobile Developer at PT. Media Pintarin Bersama.">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>M. Ziad Abdel Razzaq - Software Developer</title>
+    <title>M. Ziad Abdel Razzaq — Software Developer</title>
 </head>
 
 <body>
@@ -18,7 +20,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">AbdelCode</a>
+                <a href="index.html" class="nav__logo"><span class="nav__logo-mark">AR</span>AbdelCode</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -31,40 +33,93 @@
                 </ul>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
                 <ion-icon name="menu"></ion-icon>
-            </div>
+            </button>
         </nav>
     </header>
 
     <!-- MAIN -->
-    <main class="l-main bd-grid">
-        <div class="home">
-            <div class="home__information">
-                <span class="home__pressent anime-text">Halo, My name is</span>
-                <h1 class="home__title anime-text">M. Ziad Abdel Razzaq</h1>
-                <span class="home__skill anime-text">I'm a Software Developer</span>
+    <main class="l-home bd-grid">
+        <div class="home-wrap">
+            <div class="home">
+                <div class="home__information">
+                    <span class="badge anime-text">
+                        <span class="badge__dot"></span>
+                        Currently interning at PT. Media Pintarin Bersama
+                    </span>
 
-                <div>
-                    <a href="assets/cv/My_cv.pdf" class="home__button anime-text" download>DOWNLOAD CV</a>
+                    <h1 class="home__title anime-text">
+                        Hi, I'm <span class="text-gradient">M. Ziad<br>Abdel Razzaq</span>
+                    </h1>
+
+                    <p class="home__skill anime-text">
+                        Software Development student at <span class="serif">IDN Boarding School</span>
+                    </p>
+
+                    <p class="home__intro anime-text">
+                        I build web and mobile applications — currently shipping React Native apps and
+                        Golang services during my internship, with a foundation in Flutter, Laravel and React.js.
+                    </p>
+
+                    <div class="btn-group anime-text">
+                        <a href="projects.html" class="btn btn--primary">
+                            View Projects <ion-icon name="arrow-forward"></ion-icon>
+                        </a>
+                        <a href="assets/cv/My_cv.pdf" class="btn btn--ghost" download>
+                            <ion-icon name="download"></ion-icon> Download CV
+                        </a>
+                    </div>
+
+                    <div class="social anime-text">
+                        <a href="https://github.com/abdelrazzaq19" target="_blank" rel="noopener" class="social__link"
+                            aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="https://www.linkedin.com/in/abdel-razzaq-7a7188324/" target="_blank" rel="noopener"
+                            class="social__link" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://wa.me/6285117677881" target="_blank" rel="noopener" class="social__link"
+                            aria-label="WhatsApp"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a href="mailto:ziadabdelrazzaq@gmail.com" class="social__link" aria-label="Email"><ion-icon
+                                name="mail"></ion-icon></a>
+                    </div>
+                </div>
+
+                <div class="home__img">
+                    <img src="assets/img/photo.jpg" alt="Portrait of M. Ziad Abdel Razzaq">
+
+                    <div class="home__floating">
+                        <span class="icon-box"><ion-icon name="code"></ion-icon></span>
+                        <div>
+                            <strong>Web &amp; Mobile Dev Intern</strong>
+                            <span>React Native · Golang</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="home__img">
-                <img src="assets/img/photo.jpg" alt="">
+            <div class="stats">
+                <div class="stat card reveal">
+                    <div class="stat__value text-gradient">6+</div>
+                    <div class="stat__label">Web &amp; mobile projects built</div>
+                </div>
+                <div class="stat card reveal">
+                    <div class="stat__value text-gradient">3</div>
+                    <div class="stat__label">Schools taught via IDN Teaching</div>
+                </div>
+                <div class="stat card reveal">
+                    <div class="stat__value text-gradient">10</div>
+                    <div class="stat__label">Professional certificates earned</div>
+                </div>
             </div>
-
-            <div class="home__social">
-                <a href="https://github.com/abdelrazzaq19" target="_blank" rel="noopener"><ion-icon name="logo-github"
-                        class="home__social-icon"></ion-icon></a>
-                <a href="https://www.linkedin.com/in/abdel-razzaq-7a7188324/" target="_blank" rel="noopener"><ion-icon
-                        name="logo-linkedin" class="home__social-icon"></ion-icon></a>
-                <a href="https://wa.me/6285117677881" target="_blank" rel="noopener"><ion-icon name="logo-whatsapp"
-                        class="home__social-icon"></ion-icon></a>
-            </div>
-
         </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner bd-grid">
+            <span>© <span data-year>2026</span> M. Ziad Abdel Razzaq. Built with care.</span>
+            <span>IDN Boarding School · PT. Media Pintarin Bersama</span>
+        </div>
+    </footer>
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
@@ -74,6 +129,7 @@
 
     <!-- ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
